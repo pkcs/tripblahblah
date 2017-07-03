@@ -93,8 +93,10 @@ public class MainActivity extends AppCompatActivity
             getSupportFragmentManager().beginTransaction().replace( R.id.content_main, TripPlanFragment.newInstance() ).commit();
         } else if (id == R.id.nav_attractions) {
             getSupportFragmentManager().beginTransaction().replace( R.id.content_main, AttractionFragment.newInstance() ).commit();
-        } else {
+        } else if (id == R.id.nav_guide){
             getSupportFragmentManager().beginTransaction().replace( R.id.content_main, GuideFragment.newInstance() ).commit();
+        } else if( id == R.id.nav_logout) {
+            Log.i("test", "touch");
         }
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);

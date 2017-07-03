@@ -6,6 +6,7 @@
     <string name="navigation_drawer_tripplans_menu">여행 계획</string>
     <string name="navigation_drawer_attractions_menu">여행지</string>
     <string name="navigation_drawer_guide_menu">가이드</string>
+    <string name="navigation_drawer_logout">로그아웃</string>
     <string name="dialog_login_textview">로그인</string>
 
     <string name="action_settings">Settings</string>
