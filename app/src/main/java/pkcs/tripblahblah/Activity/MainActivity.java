@@ -1,5 +1,6 @@
 package pkcs.tripblahblah.Activity;
 
+import android.content.DialogInterface;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
@@ -13,7 +14,9 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.WindowManager;
 
+import pkcs.tripblahblah.Dialog.LoginDialog;
 import pkcs.tripblahblah.Fragment.AttractionFragment;
 import pkcs.tripblahblah.Fragment.GuideFragment;
 import pkcs.tripblahblah.Fragment.TripPlanFragment;
@@ -34,6 +37,12 @@ public class MainActivity extends AppCompatActivity
                 this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
         drawer.setDrawerListener(toggle);
         toggle.syncState();
+
+        LoginDialog dialog = new LoginDialog(this);
+        dialog.getWindow().clearFlags( WindowManager.LayoutParams.FLAG_DIM_BEHIND);
+        WindowManager.LayoutParams params = dialog.getWindow().getAttributes();
+        dialog.getWindow().setAttributes(params);
+        dialog.show();
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
