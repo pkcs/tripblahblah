@@ -18,14 +18,14 @@
             android:id="@+id/nav_manage"
             android:icon="@drawable/ic_menu_manage"
             android:title="Tools" />
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="@string/navigation_drawer_logout" />
     </group>
 
     <item android:title="UserManage">
         <menu>
-            <item
-                android:id="@+id/nav_logout"
-                android:icon="@drawable/ic_menu_slideshow"
-                android:title="@string/navigation_drawer_logout" />
         </menu>
     </item>
 
