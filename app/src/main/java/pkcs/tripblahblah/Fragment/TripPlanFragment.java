@@ -25,7 +25,7 @@ public class TripPlanFragment  extends Fragment {
     private TripPlansAdapter mAdapter;
     private ArrayList<TripPlans> mTripPlansItems=new ArrayList<>();
     private View mRootView;
-
+    //
     public static TripPlanFragment newInstance() {
         return new TripPlanFragment();
     }
