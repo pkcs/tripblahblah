@@ -3,7 +3,10 @@ package pkcs.tripblahblah.Holder;
 import android.content.Context;
 import android.util.Log;
 import android.view.View;
+import android.widget.ImageView;
 import android.widget.TextView;
+
+import com.squareup.picasso.Picasso;
 
 import pkcs.tripblahblah.Model.TripPlans;
 import pkcs.tripblahblah.R;
@@ -17,6 +20,7 @@ public class TripPlansHolder extends BaseViewHolder<TripPlans> implements View.O
     TripPlans mTripPlans;
     private TextView title;
     private TextView period;
+    private ImageView itemBackground;
 
     public TripPlansHolder(Context context,View itemView) {
         super(itemView);
@@ -24,7 +28,7 @@ public class TripPlansHolder extends BaseViewHolder<TripPlans> implements View.O
         itemView.setOnClickListener(this);
         title = (TextView)itemView.findViewById(R.id.textview_tripplan_title);
         period = (TextView)itemView.findViewById(R.id.textview_tripplan_date);
-
+        itemBackground = (ImageView)itemView.findViewById(R.id.imageview_tripplan_image);
     }
 
     @Override
@@ -32,6 +36,8 @@ public class TripPlansHolder extends BaseViewHolder<TripPlans> implements View.O
         mTripPlans= tripPlans;
         title.setText(mTripPlans.getTitle());
         period.setText(mTripPlans.getStartDate()+" ~ "+mTripPlans.getFinishDate());
+        Picasso.with(mContext).load(R.drawable.tripplan_background).into(itemBackground);
+        itemBackground.setImageAlpha(200);
     }
 
     @Override

@@ -61,6 +61,22 @@ public class TripPlanFragment  extends Fragment {
         mTripPlansItems.add(new TripPlans("부산",date1, date2,null,null));
         mTripPlansItems.add(new TripPlans("울산",date1, date2,null,null));
         mTripPlansItems.add(new TripPlans("김해",date1, date2,null,null));
+        mTripPlansItems.add(new TripPlans("서울",date1, date2,null,null));
+        mTripPlansItems.add(new TripPlans("부산",date1, date2,null,null));
+        mTripPlansItems.add(new TripPlans("울산",date1, date2,null,null));
+        mTripPlansItems.add(new TripPlans("김해",date1, date2,null,null));
+        mTripPlansItems.add(new TripPlans("서울",date1, date2,null,null));
+        mTripPlansItems.add(new TripPlans("부산",date1, date2,null,null));
+        mTripPlansItems.add(new TripPlans("울산",date1, date2,null,null));
+        mTripPlansItems.add(new TripPlans("김해",date1, date2,null,null));
+        mTripPlansItems.add(new TripPlans("서울",date1, date2,null,null));
+        mTripPlansItems.add(new TripPlans("부산",date1, date2,null,null));
+        mTripPlansItems.add(new TripPlans("울산",date1, date2,null,null));
+        mTripPlansItems.add(new TripPlans("김해",date1, date2,null,null));
+        mTripPlansItems.add(new TripPlans("서울",date1, date2,null,null));
+        mTripPlansItems.add(new TripPlans("부산",date1, date2,null,null));
+        mTripPlansItems.add(new TripPlans("울산",date1, date2,null,null));
+        mTripPlansItems.add(new TripPlans("김해",date1, date2,null,null));
         /*for(TripPlans tripPlans : arrayList){
             mTripPlansItems.add(tripPlans);
         }*/

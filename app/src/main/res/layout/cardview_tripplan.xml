@@ -3,7 +3,10 @@
     android:id="@+id/cardview_tripplan_item"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_margin="5dp">
+    android:layout_marginTop="5dp"
+    android:layout_marginBottom="5dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -13,6 +16,7 @@
         <ImageView
             android:id="@+id/imageview_tripplan_image"
             android:layout_width="match_parent"
+            android:scaleType="centerCrop"
             android:layout_height="210dp" />
 
         <TextView
